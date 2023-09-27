@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: counter-image
-        image: counter-image:latest
+        image: ghcr.io/theruid/counter-image
         ports:
         - containerPort: 8080
