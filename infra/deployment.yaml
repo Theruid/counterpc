@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: counter-image-deployment
+  labels:
+    app: counter-image
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: counter-image
+  template:
+    metadata:
+      labels:
+        app: counter-image
+    spec:
+      containers:
+      - name: counter-image
+        image: counter-image:latest
+        ports:
+        - containerPort: 8080
