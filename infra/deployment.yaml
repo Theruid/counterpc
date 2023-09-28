@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: counter-image
-        image: counter-image:latest
+        image: theruid/masoud:latest
         ports:
         - containerPort: 8080
