@@ -5,7 +5,7 @@ metadata:
   labels:
     app: counter-image
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: counter-image
